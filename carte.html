@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Carte Shopping</title>
+  </head>
+  <body id="body">
+    <header id="header" class="container-fluid ">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://kaylabe.com/attachments/Image/shopping-cart-icon2.png?template=generic"
+            width="34"
+            height="34"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          Shopping online
+        </a>
+        <div class="btn-panel">
+        <button id="btn-panier" type="button" class="btn btn-warning  ">
+            <img
+            src="https://image.flaticon.com/icons/png/512/34/34330.png"
+            width="25"
+            height="25"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          &nbsp; <span id="span-panier" class="badge badge-light">0</span>
+        </button>
+      </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            
+            <li id ="d1" class="nav-item dropdown ">
+              <a class="nav-link  " href="#" id="navbarDropdown1" onmouseout="hideDropBox(this.id)" onmouseover="showDropBox(this.id)"  role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                Informatique
+               </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"> <u><strong><em>PCs</em></em></strong></u> </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Pc bureautique </a>
+                  
+                  <a class="dropdown-item" href="#">Pc portable</a>
+
+                </div>
+              </li>
+              <li id ="d2" class="nav-item dropdown ">
+                  <a class="nav-link  " href="#" id="navbarDropdown2" onmouseout="hideDropBox(this.id)" onmouseover="showDropBox(this.id)"  role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                   Bureautique
+                  </a>
+                  <div id ="drop-content" class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div id="list1" >
+                    <a class="dropdown-item" href="#"><u><strong><em>Photocopieurs</em></em></strong></u></a>
+                   
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                  <div id="list2" >
+                      <a class="dropdown-item" href="#"><u><strong><em>Photocopieurs</em></em></strong></u></a>
+                     
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </li>
+                <li id ="d3" class="nav-item dropdown ">
+                    <a class="nav-link " href="#" id="navbarDropdown3" onmouseout="hideDropBox(this.id)" onmouseover="showDropBox(this.id)" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                      Téléphonie
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li id ="d4" class="nav-item dropdown ">
+                      <a class="nav-link " href="#" id="navbarDropdown4" onmouseout="hideDropBox(this.id)" onmouseover="showDropBox(this.id)" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                          Electromenager
+                      </a>
+                      <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li id ="d5" class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown5" onmouseout="hideDropBox(this.id)" onmouseover="showDropBox(this.id)" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                          Sport
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider">aller</div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+          </ul>
+          <div class="btn-large">
+          <button id="btn-panier" type="button" class="btn btn-warning ">
+              <img
+              src="https://image.flaticon.com/icons/png/512/34/34330.png"
+              width="25"
+              height="25"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            &nbsp; <span id="span-panier2" class="badge badge-light">0</span>
+          </button>
+        </div>
+
+          <form class="form-inline my-6 my-lg-0">
+            <input
+              class="form-control  mr-sm-2"
+              type="search"
+              placeholder="Search ..."
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+            
+          </form>
+          
+      </nav>
+      <!--<div id="dropDown">
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+      </div>-->
+      
+    </header>
+    <main id="container" class="container">
+      <div id="order" calss="container">
+         <div id="table" class="">
+            <div class="card border border-success" style="width: 100%;">
+                <div class="card-header font-weight-bold">
+               Panier
+                </div>
+                <ul id="ul-prod" class="list-group list-group-flush ">
+                      <li class="list-group-item" >
+                        <table style="height:auto;">
+                            <tbody>
+                              <tr class="tr" >
+                                <td class="item-img border-right align-middle"><img class="card-img-top" src="https://d2j7t5u190oygv.cloudfront.net/img/p/4/6/9/5/3/46953-large_default.jpg" height="130px" width="100px" alt=""></td>
+                                <td class="item-descreption border-right align-middle text-center">Descreption</td>
+                                <td class="item-pu border-right align-middle text-center">20,000 TND</td>
+                                <td class="item-qte border-right input-qte align-middle text-center ">
+                                  <div class="input-group mb-3 mx-auto ">
+                                    <div class="input-group-prepend">
+                                      <button onclick="increment(this)" class="btn btn-outline-secondary " type="button" id="button-addon1">-</button>
+                                    </div>
+                                    <input readonly type="text" id="input-qte" value="0" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <div class="input-group-append ">
+                                        <button onclick="increment(this)" class="btn btn-outline-secondary " type="button" id="button-addon2">+</button>
+                                    </div>                                 
+                                  </div> 
+                                </td>
+                                <td  class="item-montant align-middle text-center font-weight-bold text-danger">0,000 TND</td>                               
+                              </tr>
+                            </tbody>
+                          </table>                      
+                       </li>
+                       <li class="list-group-item" >
+                          <table style="height:auto;">
+                              <tbody>
+                                <tr class="tr" >
+                                  <td class="item-img border-right align-middle"><img class="card-img-top" src="https://d2j7t5u190oygv.cloudfront.net/img/p/4/6/9/5/3/46953-large_default.jpg" height="130px" width="100px" alt=""></td>
+                                  <td class="item-descreption border-right align-middle text-center">Descreption</td>
+                                  <td class="item-pu border-right align-middle text-center">20,000 TND</td>
+                                  <td class="item-qte border-right input-qte align-middle text-center ">
+                                    <div class="input-group mb-3 mx-auto ">
+                                      <div class="input-group-prepend">
+                                        <button onclick="increment(this)" class="btn btn-outline-secondary " type="button" id="button-addon1">-</button>
+                                      </div>
+                                      <input readonly type="text" id="input-qte" value="0" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                      <div class="input-group-append ">
+                                          <button onclick="increment(this)" class="btn btn-outline-secondary " type="button" id="button-addon2">+</button>
+                                      </div>                                 
+                                    </div> 
+                                  </td>
+                                  <td  class="item-montant align-middle text-center font-weight-bold text-danger">0,000 TND</td>                               
+                                </tr>
+                              </tbody>
+                            </table>                      
+                         </li>
+                  
+                </ul>
+            </div>
+          </div>
+          <div id="total" class="">
+              <div class="card border border-success" style="width: 100%;">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item font-weight-bold">Total TTC </li>
+                    <li class="list-group-item montant  font-weight-bold text-primary">0,000 TND</li>
+                    <li class="list-group-item mx-auto"><button type="button" class="btn btn-info">Commander</button></li>
+                  </ul>
+                </div>
+              
+          </div>
+      </div>
+      
+       
+    </main>
+    <footer id="footer" class="container-fluid"></footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

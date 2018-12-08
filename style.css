@@ -1,0 +1,148 @@
+#container {
+  background-color: white;
+  height: auto;
+  padding-top: 70px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+#header {
+  background-color: transparent;
+  position: fixed;
+  padding-top: 56px;
+  z-index: 1;
+}
+#dropDown {
+  margin-right: 25%;
+  margin-left: 15%;
+  /*background-color: blueviolet;
+  height: 100px;*/
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+.drop-content {
+  display: flex;
+}
+
+.ok {
+  background-color: transparent;
+  color: white !important;
+}
+/*.ok:hover {
+  background-color: greenyellow;
+}
+*/
+#btn-panier {
+  /*margin-left: 60%*/
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+#footer {
+  margin-top: 5px;
+  height: 200px;
+  background-color: grey;
+  /* border-radius: 10px;*/
+}
+#list-produit {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: -1;
+}
+.cardx {
+  margin: 5px;
+  /* border-radius: 10px !important; */
+}
+/* .cardx:hover {
+  border-color: darkgreen !important;
+  border-width: 2px !important;
+} */
+.btn-panel {
+  display: none;
+}
+
+#container_carte {
+  background-color: white;
+  height: auto;
+  padding-top: 70px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+#order {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+#total {
+  margin: 10px 0;
+  width: 100%;
+  min-width: 200px;
+  background-color: none;
+  padding: 10px;
+}
+#table {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  min-width: 680px;
+  background-color: none;
+}
+@media only screen and (max-width: 970px) {
+  .btn-panel {
+    display: inline-block;
+  }
+  .btn-large {
+    display: none;
+  }
+  #order {
+    display: block;
+  }
+}
+
+.item-properties {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+.item-img {
+  margin: 0 5px 0 0;
+  min-width: 100px;
+}
+.item-descreption {
+  margin: 0 5px;
+  min-width: 200px;
+}
+.item-pu {
+  margin: 0 5px;
+  min-width: 50px;
+}
+.item-qte {
+  margin: 0 5px;
+  min-width: 50px;
+}
+.item-montant {
+  margin: 0 5px;
+  width: 120px;
+}
+.disp {
+  color: green;
+  font-weight: 400;
+}
+.prix {
+  color: blue;
+  font-weight: 600;
+}
+.side-menu {
+  width: 120px;
+}
+.input-qte {
+  width: 110px;
+  padding: 0;
+}
